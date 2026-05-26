@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@source "../../**/*.njk";
+@source "../../**/*.md";
+@source "../../**/*.html";
+
+@theme {
+  --leading-tightest: 1.05;
+}

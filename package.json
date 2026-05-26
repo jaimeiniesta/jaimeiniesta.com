@@ -1,0 +1,20 @@
+{
+  "name": "jaimeiniesta.com",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "clean": "rm -rf _site",
+    "build:css": "npx @tailwindcss/cli -i src/assets/css/tailwind.css -o _site/assets/css/style.css --minify",
+    "build:html": "eleventy",
+    "build": "npm-run-all clean build:html build:css",
+    "watch:css": "npx @tailwindcss/cli -i src/assets/css/tailwind.css -o _site/assets/css/style.css --watch",
+    "watch:html": "eleventy --serve",
+    "dev": "npm-run-all --parallel watch:*"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@tailwindcss/cli": "^4.0.0",
+    "npm-run-all": "^4.1.5",
+    "tailwindcss": "^4.0.0"
+  }
+}
