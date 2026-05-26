@@ -1,0 +1,52 @@
+---
+layout: layouts/base.njk
+pageTitle: "Cans · Audio Boost, Pan & EQ"
+---
+<main class="mx-auto w-full max-w-4xl px-4 py-24">
+
+  <header class="text-center">
+    <img src="/img/cans/icon-128.png" alt="Cans icon" class="mx-auto w-24 h-24" width="128" height="128" />
+    <h1 class="mt-6 text-5xl font-extrabold tracking-tight text-gray-900 leading-tightest md:text-6xl">Cans</h1>
+    <p class="mt-4 text-2xl text-purple-600 font-semibold">Audio Boost, Pan &amp; EQ for any tab</p>
+    <p class="mt-6 text-lg text-gray-700 max-w-2xl mx-auto">A Chrome extension that processes the active tab's audio in real time &mdash; push the volume past 100&nbsp;%, pan the stereo image, swap left and right channels, and shape the sound with a 10-band EQ.</p>
+    <p class="mt-6">
+      <span class="inline-block px-3 py-1 text-sm font-semibold rounded-full bg-yellow-100 text-yellow-800 border border-yellow-300">
+        Unpublished &middot; coming to the Chrome Web Store
+      </span>
+    </p>
+  </header>
+
+  <section class="mt-16">
+    <h2 class="text-3xl font-extrabold tracking-tight text-gray-700 leading-tightest">What it does</h2>
+    <ul class="mt-6 text-lg space-y-3">
+      <li><b>Volume boost</b> &mdash; 0&nbsp;to&nbsp;500&nbsp;%, well past Chrome's built-in ceiling. For quiet recordings, under-mixed podcasts and laptop speakers that just won't reach.</li>
+      <li><b>Stereo pan &amp; channel swap</b> &mdash; move the audio between your ears, or send the left channel to your right ear with one tap. Useful for guitar practice with backing tracks, dead earbuds, or films that mix dialogue to the wrong side.</li>
+      <li><b>10-band equalizer</b> &mdash; 31&nbsp;Hz to 16&nbsp;kHz, &plusmn;12&nbsp;dB per band, with a preamp and eight built-in presets (Flat, Rock, Pop, Jazz, Classical, Bass, Treble, Vocal).</li>
+      <li><b>Independent left/right EQ</b> &mdash; unlock the EQ to get two independent chains with their own tabs and presets. Handy if your hearing isn't symmetric.</li>
+      <li><b>Profiles</b> &mdash; save full snapshots of every control and roam them across your devices via Chrome sync.</li>
+    </ul>
+  </section>
+
+  <section class="mt-16">
+    <h2 class="text-3xl font-extrabold tracking-tight text-gray-700 leading-tightest">Screenshots</h2>
+    <figure class="mt-6">
+      <img src="/img/cans/popup.png" alt="The Cans popup showing Volume, Pan, Swap, the 10-band EQ and the Profiles footer" class="mx-auto rounded-lg shadow-lg border border-gray-200" />
+      <figcaption class="mt-3 text-center text-sm text-gray-600">The popup at a glance: 10-band EQ with per-band coloured thumbs, the centre-anchored Pan slider with its inline Swap button, and the profile selector in the footer.</figcaption>
+    </figure>
+    <figure class="mt-12">
+      <img src="/img/cans/eq-stereo.png" alt="The EQ in Stereo mode with the L tab active, showing two independent per-channel curves" class="mx-auto rounded-lg shadow-lg border border-gray-200" />
+      <figcaption class="mt-3 text-center text-sm text-gray-600">Stereo EQ mode: lock icon unlatched, L/R tab switcher revealed, each channel has its own 10-band curve.</figcaption>
+    </figure>
+  </section>
+
+  <section class="mt-16">
+    <h2 class="text-3xl font-extrabold tracking-tight text-gray-700 leading-tightest">Privacy</h2>
+    <p class="my-6 text-lg">Cans does not transmit any data outside the browser. No analytics, no telemetry, no third-party scripts. The audio stream is processed in real time inside the offscreen document &mdash; never recorded, never sent over the network. Per-tab settings live in <code class="text-base">chrome.storage.session</code> (wiped on browser restart); named profiles live in <code class="text-base">chrome.storage.sync</code> so they roam with your Chrome account. Uninstalling the extension deletes all of it.</p>
+  </section>
+
+  <section class="mt-16">
+    <h2 class="text-3xl font-extrabold tracking-tight text-gray-700 leading-tightest">Status</h2>
+    <p class="my-6 text-lg">Cans is currently at <b>v0.1.0</b> and still unpublished &mdash; we're getting it ready for the Chrome Web Store. If you'd like an early build, or want to talk audio extensions, the contact details are on <a href="/" class="font-semibold hover:underline">the home page</a>.</p>
+  </section>
+
+</main>
